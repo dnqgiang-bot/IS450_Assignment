@@ -40,14 +40,24 @@ def main():
         except ValueError:
             print("Invalid input. Please enter a number.")
             
-    print("\nTotal price: $", packages * 160) #show total price based on number of packages
+    subtotal = packages * 160
 
+    if packages >= 3:
+        discount = subtotal * 0.10 # apply 10% discount for 3 or more packages
+    else:
+        discount = 0
+
+    total = subtotal - discount
+
+    print(f"\nSubtotal: ${subtotal:.2f}")
+    print(f"Bulk discount: -${discount:.2f}")
+    print(f"Total price: ${total:.2f}")
+            
     for i in range(packages): # open each package and display the items inside
         input(f"\nPress Enter to open your package {i + 1}...") #prompt user to open each package -> Chatgpt assistance
         print("Package", i + 1)
         open_package()
 
     print("\nThank you for shopping at Giang Do Popsmart!")
-
 
 main()

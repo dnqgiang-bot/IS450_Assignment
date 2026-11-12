@@ -38,12 +38,6 @@ How to Run the Program
     - Enter positive whole number when asked how many packages you want.
     - Press Enter when prompted to open each package and box.
     - check for output 
+    
+Assignment 9 Summary 11/11/2026:The manual feature add positive whole-number validation for the number of packages, I wrote it myself. The AI feature add 10% discount if user buy more than 3 packages. I used chatgpt to write code for it. I dint change anything on AI generated code as it work good on the first attempt. I had better confidence in the AI generated code because my code usually have error in the first run but AI code usually work on the first attempt.
 
-Mannual Fearture: Assignment 9 - 11/11/2026
-    Feature name: Positive Whole Number Input Validation
-    Purpose: Make sure the customer enters a valid number of packages 
-    Expected behavior: The program accepts a positive whole number. If the customer enters text, zero, or a negative number, it displays an error and asks again.
-    Test cases
-    1. Valid input: Enter 2. The program accepts it, displays a total price of $320, and continues.
-    2. Invalid text: Enter abc. The program displays an error and asks for the package count again.
-    3. Invalid number: Enter -1, then 2. The program displays an error for -1, asks again, then accepts 2 and displays $320.
