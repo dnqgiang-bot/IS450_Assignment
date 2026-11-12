@@ -30,8 +30,16 @@ def main():
     print("\nOur store currently has:Labubu Christmas Collection")
     print("Package of 6 boxes: $160")
 
-    packages = int(input("\nHow many packages do you want? ")) #ask user how many packages they want to buy
-
+    while True:
+        try:
+            packages = int(input("\nHow many packages do you want? ")) #ask user how many packages they want to buy
+            if packages > 0:
+                break
+            else:
+                print("Please enter a number greater than 0.")
+        except ValueError:
+            print("Invalid input. Please enter a number.")
+            
     print("\nTotal price: $", packages * 160) #show total price based on number of packages
 
     for i in range(packages): # open each package and display the items inside
