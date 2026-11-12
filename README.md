@@ -38,5 +38,6 @@ How to Run the Program
     - Enter positive whole number when asked how many packages you want.
     - Press Enter when prompted to open each package and box.
     - check for output 
-
+    
 Assignment 9 Summary 11/11/2026:The manual feature add positive whole-number validation for the number of packages, I wrote it myself. The AI feature add 10% discount if user buy more than 3 packages. I used chatgpt to write code for it. I dint change anything on AI generated code as it work good on the first attempt. I had better confidence in the AI generated code because my code usually have error in the first run but AI code usually work on the first attempt.
+

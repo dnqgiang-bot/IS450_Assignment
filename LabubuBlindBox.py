@@ -30,8 +30,16 @@ def main():
     print("\nOur store currently has:Labubu Christmas Collection")
     print("Package of 6 boxes: $160")
 
-    packages = int(input("\nHow many packages do you want? ")) #ask user how many packages they want to buy
-
+    while True:
+        try:
+            packages = int(input("\nHow many packages do you want? ")) #ask user how many packages they want to buy
+            if packages > 0:
+                break
+            else:
+                print("Please enter a number greater than 0.")
+        except ValueError:
+            print("Invalid input. Please enter a number.")
+            
     subtotal = packages * 160
 
     if packages >= 3:
@@ -44,13 +52,12 @@ def main():
     print(f"\nSubtotal: ${subtotal:.2f}")
     print(f"Bulk discount: -${discount:.2f}")
     print(f"Total price: ${total:.2f}")
-
+            
     for i in range(packages): # open each package and display the items inside
         input(f"\nPress Enter to open your package {i + 1}...") #prompt user to open each package -> Chatgpt assistance
         print("Package", i + 1)
         open_package()
 
     print("\nThank you for shopping at Giang Do Popsmart!")
-
 
 main()
